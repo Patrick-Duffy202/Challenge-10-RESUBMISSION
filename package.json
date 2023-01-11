@@ -1,4 +1,25 @@
 {
+  "name": "challenge-10-team-profile-generator",
+  "version": "1.0.0",
+  "description": "Profile Generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Patrick-Duffy202/Challenge-10-RESUBMISSION"
+  },
+  "keywords": [
+    "profile",
+    "gen"
+  ],
+  "author": "Patrick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Patrick-Duffy202/Challenge-10-RESUBMISSION/issues"
+  },
+  "homepage": "https://github.com/Patrick-Duffy202/Challenge-10-RESUBMISSION#readme",
   "dependencies": {
     "inquirer": "^9.1.4",
     "jest": "^29.3.1"
