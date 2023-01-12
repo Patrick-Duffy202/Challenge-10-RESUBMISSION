@@ -1,7 +1,6 @@
 const createManager = function (manager) {
     return `
-    <div class="col-5 mt-5">
-        <div class="card h-100">
+        <div class="card">
             <div class="card-header">
                 <h3>${manager.name}</h3>
                 <h4>Manager</h4>
@@ -12,14 +11,12 @@ const createManager = function (manager) {
                 <p class="office">Office Number: ${manager.officeNumber}</p>
             </div>
         </div>
-    </div>
     `
 };
 
 const createEngineer = function (engineer) {
     return `
-    <div class="col-5 mt-5">
-        <div class="card h-100">
+        <div class="card">
             <div class="card-header">
                 <h3>${engineer.name}</h3>
                 <h4>Engineer</h4>
@@ -30,14 +27,12 @@ const createEngineer = function (engineer) {
                 <p class="github">Github: <a href="https://github.com/${engineer.github}">${engineer.github}</a></p>
             </div>
         </div>
-    </div>
     `
 };
 
 const createIntern = function (intern) {
     return `
-    <div class="col-5 mt-5">
-        <div class="card h-100">
+        <div class="card">
             <div class="card-header">
                 <h3>${intern.name}</h3>
                 <h4>Intern</h4>
@@ -48,7 +43,6 @@ const createIntern = function (intern) {
                 <p class="school">School: ${intern.school}</p>
             </div>
     </div>
-</div>
     `
 };
 
@@ -98,9 +92,7 @@ const generateTeamHtml = function (employeeCards) {
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>Meet My Team</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-      <link href="https://fonts.googleapis.com/css?family=Public+Sans:300i,300,500&display=swap" rel="stylesheet">
-      
+      <link rel="stylesheet" href="style.css"
     </head>
     <body>
       <header>
@@ -110,7 +102,6 @@ const generateTeamHtml = function (employeeCards) {
       </header>
       <main class="container my-5">
             <div class="row justify-content-center" id="team-cards">
-                  <!--Team Cards-->
                   ${employeeCards}
             </div>
       </main>
