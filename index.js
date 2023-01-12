@@ -1,5 +1,4 @@
 const generatePage = require('./src/generatePage');
-
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern'); 
@@ -8,7 +7,6 @@ const teamArray = [];
 
 const fs = require('fs'); 
 const inquirer = require('inquirer');
-
 
 const addManager = () => {
     return inquirer.prompt ([
@@ -140,7 +138,4 @@ addManager()
   })
   .then(pageHTML => {
     return writeFile(pageHTML);
-  })
-  .catch(err => {
- console.log(err);
   });
